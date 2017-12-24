@@ -1,0 +1,35 @@
+{
+  "name": "ibird-impexp",
+  "version": "1.0.0-alpha.1",
+  "description": "An import and export addon.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yinfxs/ibird-impexp.git"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "ibird",
+    "node",
+    "koa",
+    "web",
+    "app",
+    "http",
+    "application",
+    "addon",
+    "import",
+    "export",
+    "ibird-addon"
+  ],
+  "author": "yinfxs",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/yinfxs/ibird-impexp/issues"
+  },
+  "homepage": "https://github.com/yinfxs/ibird-impexp#readme",
+  "dependencies": {
+    "exceljs": "^0.8.1"
+  }
+}
