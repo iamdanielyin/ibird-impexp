@@ -11,8 +11,15 @@ const api = {};
  * @param app
  * @param options
  */
-function onLoad(app, options) {
-    console.log(app);
+function onload(app, options) {
+    const config = app.c();
+    const metadataGetter = typeof options.metadataGetter === 'function' || (() => config.models);
+    app.on('ibird-mongoose:model:post', (obj) => {
+
+    });
+    const metadata = metadataGetter();
+
+    
 }
 
 /**
@@ -20,6 +27,6 @@ function onLoad(app, options) {
  */
 module.exports = {
     namespace,
-    onLoad,
+    onload,
     api
 };
